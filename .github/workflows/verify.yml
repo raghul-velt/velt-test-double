@@ -1,0 +1,27 @@
+name: Verify site
+
+# Runs the marker, planted violation and decoy assertions against a deployed URL.
+# Manual only: this property has no automatic deploy gate, and the point of the run
+# is to confirm what a given deployment is actually serving.
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Base URL to verify, for example https://velt-test-double.vercel.app"
+        required: true
+        type: string
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify
+        run: node scripts/verify-site.mjs "${{ inputs.base_url }}"

@@ -1,0 +1,118 @@
+/* Home page sections. */
+
+.hero {
+  padding: 18px 0 44px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 14px;
+}
+
+.heroLede {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  margin-top: 16px;
+}
+
+.promo {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--moss);
+  padding-left: 12px;
+}
+
+.heroActions {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 44px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sectionLede {
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
+
+.whyRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 26px;
+}
+
+@media (max-width: 760px) {
+  .whyRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.whyPoint {
+  border-top: 2px solid var(--moss);
+  padding-top: 14px;
+}
+
+.whyIcon {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.whyBody {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.journalRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 26px;
+}
+
+@media (max-width: 760px) {
+  .journalRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.journalCard {
+  background: var(--bone-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-button);
+  padding: 18px;
+}
+
+.journalMeta {
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+.journalExcerpt {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.journalLink {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.93rem;
+}
+
+.closing {
+  padding: 44px 0 0;
+}
