@@ -1,0 +1,9 @@
+# Velt Test Double
+
+> A static test site for Superflow agent runs. Its pages hold known typos, layout faults and broken links on purpose.
+
+## Test pages
+
+- [Proofreader page](https://velt-test-double.vercel.app/agent-fixes/proofreader.html): four known typos
+- [Links page](https://velt-test-double.vercel.app/agent-fixes/links.html): two broken links
+- [Change detection assets page](https://velt-test-double.vercel.app/agent-fixes/cd-assets.html): a stylesheet and an image at stable URLs
