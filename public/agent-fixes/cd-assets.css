@@ -1,0 +1,7 @@
+/* Change-detection asset test, version 1: the booking button fits a phone screen. */
+body { font: 17px/1.6 system-ui, sans-serif; margin: 0; color: #1d2a26; background: #fbfaf7; }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 16px 20px; }
+nav a { margin-right: 18px; color: #1f5f4a; }
+h1 { font-family: Georgia, serif; }
+.hero { width: 100%; height: auto; border-radius: 12px; display: block; }
+.cta { display: inline-block; padding: 12px 18px; background: #1f5f4a; color: #ffffff; border-radius: 8px; text-decoration: none; }
