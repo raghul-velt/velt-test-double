@@ -1,4 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/agent-fixes/cd-vary.html",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Viewport-Width"
+        }
+      ]
+    }
+  ]
 }
